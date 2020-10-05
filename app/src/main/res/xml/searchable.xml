@@ -4,7 +4,7 @@
     android:hint="@string/search_hint"
     android:searchSuggestAuthority="com.materialsearchview.MySuggestionProvider"
     android:searchSuggestSelection=" ?"
-android:searchSuggestIntentAction="@android:string/autofill"
+
     >
 
 

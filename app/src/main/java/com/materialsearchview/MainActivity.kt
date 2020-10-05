@@ -43,14 +43,11 @@ class MainActivity : AppCompatActivity() {
         )
         if (Intent.ACTION_SEARCH == intent.action) {
             intent.getStringExtra(SearchManager.QUERY)?.also { query ->
+                Toast.makeText(this, "hi", Toast.LENGTH_SHORT).show()
                 doMySearch(query)
                 mysuggestions.saveRecentQuery(query, null)
 
             }
-        }
-
-        if (intent.action == Intent.ACTION_SEARCH_LONG_PRESS) {
-            mysuggestions.clearHistory()
         }
 
     }
@@ -67,7 +64,9 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun doMySearch(query: String) {
-        Toast.makeText(this, query, Toast.LENGTH_SHORT).show()
+        
+        textView.text= query.toString()
+   //     Toast.makeText(this, query, Toast.LENGTH_SHORT).show()
 
     }
 
