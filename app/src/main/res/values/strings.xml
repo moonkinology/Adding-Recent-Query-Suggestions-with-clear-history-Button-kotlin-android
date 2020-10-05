@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MaterialSearchView</string>
+    <string name="app_label">SearchProjekt</string>
+    <string name="clear">Button</string>
+</resources>
