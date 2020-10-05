@@ -52,9 +52,7 @@ class MainActivity : AppCompatActivity() {
         if (intent.action == Intent.ACTION_SEARCH_LONG_PRESS) {
             mysuggestions.clearHistory()
         }
-        if (intent.action == Intent.) {
-            Toast.makeText(this, "hiiii     ", Toast.LENGTH_SHORT).show()
-        }
+
     }
 
 
